@@ -1,0 +1,112 @@
+#img1{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -9999;
+}
+
+#header .about{
+    position: absolute;
+    color: #fff;
+    right: 44px;
+    top: 20px;
+    font-size: 18px;
+    font-family:"黑体" ;
+    z-index: 999;
+}
+#header .about:hover{
+    text-shadow: 0 0 20px blue;
+}
+.nav .nav-bt{
+    position: absolute;
+    left:45px;
+    top: 110px;
+}
+.nav .nav-bt img{
+    margin-left: 40px;
+}
+.nav .nav-bt span{
+    display: block;
+    width: 274px;
+    height: 19px;
+    background: url("../images/line-lg.png") no-repeat;
+}
+.nav{
+    position: absolute;
+    left:80px;
+    top: 20px;
+
+}
+.nav ul{
+    position: absolute;
+    left: 90px;
+    top: 200px;
+
+}
+.nav ul li{
+    text-align: center;
+    height: 82px;
+    font-size: 24px;
+    font-family: "微软雅黑";
+}
+.nav ul li a{
+    color: #fff;
+}
+.nav ul li a:hover{
+    /*color: #0e5bcf;*/
+    cursor: pointer;
+    text-shadow: 0 0 20px blue;
+}
+.nav ul li span{
+    display: block;
+    width: 176px;
+    height: 20px;
+    background: url("../images/line.png") no-repeat;
+}
+
+@media screen and (max-width: 1400px){
+    #content .data ul li{
+        white-space: nowrap;
+        box-sizing: border-box;
+        float: left;
+        width:7%;
+        height: 9rem;
+        line-height:9rem ;
+        border: 2px solid #47a4ff;
+        margin-right: 15px;
+        font-size: 80px;
+        color: #fff;
+        font-family: Arial;
+        text-align: center;
+    }
+    .navImg{width: 80%}
+    .nav .nav-bt img{
+        width: 60%;
+        margin-left: 20px;
+    }
+    .nav .nav-bt span{
+        background-size: 80%;
+    }
+    .nav ul{left: 65px;}
+    .nav ul li{
+        height: 60px;
+        font-size: 18px;
+    }
+
+    .nav ul li span{
+        background-size: 90%;
+    }
+    #main{
+        width: 800px !important;
+        height: 300px !important;
+    }
+    #main1{
+        width: 400px !important;
+        height: 300px !important;
+        left: 380px  !important;
+    }
+    #china{
+        width: 500px !important ;
+        height: 300px !important;
+    }
+}

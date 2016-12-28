@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>点餐指数</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/css.css">
+    <link rel="stylesheet" href="css/orderIndex.css">
+    <link rel="shortcut icon" href="images/ico/icoe.ico" type="image/x-icon"/>
+    <script type="text/javascript" src="js/jquery.1.11.3.min.js"></script>
+    <script type="text/javascript" src="js/echarts.min.js"></script>
+    <script type="text/javascript" src="js/china.js"></script>
+    <script type="text/javascript" src="js/orderIndex.js"></script>
+</head>
+<body>
+<div id="content">
+    <div id="header" >
+        <a class="logo" href="index.html"><img src="images/logo.png"></a>
+        <a class="about" href="About.html">关于我们</a>
+    </div>
+    <img id="img1" src="images/orderIndex-bg.png">
+    <div id="main" style="width:1200px;height: 400px;margin-left: 600px;padding-top: 100px;"> </div>
+    <div id="china" style="width: 500px;height: 300px;margin-top: 160px;"></div>
+    <div class="nav">
+        <img class="navImg" src="images/nav.png" alt="">
+        <div class="nav-bt">
+            <img src="images/nav-bt.png" alt="">
+            <span></span>
+        </div>
+        <ul>
+            <li>
+                <a href="taxiIndex.html">打车指数</a>
+                <span></span>
+            </li>
+            <li>
+                <a href="orderIndex.html">点餐指数</a>
+                <span></span>
+            </li>
+            <li>
+                <a href="loanIndex1.html">贷款指数</a>
+                <span></span>
+            </li>
+            <li>
+                <a href="gameIndex.html">游戏指数</a>
+                <span></span>
+            </li>
+            <li>
+                <a href="TripIndex.html">旅游指数</a>
+                <span></span>
+            </li>
+
+        </ul>
+    </div>
+    <div class="province">
+        <span class="arrows left">
+            <img src="images/left.png" alt="">
+        </span>
+        <div class="province-d">
+        <ul class="clearfix province-u">
+            <li>
+               <span><img src="images/1.png" alt=""></span>
+                <em>河北</em>
+            </li>
+            <li>
+                <span><img src="images/2.png" alt=""></span>
+                <em>安徽</em>
+            </li>
+            <li>
+                <span><img src="images/3.png" alt=""></span>
+                <em>山西</em>
+            </li>
+            <li>
+                <span><img src="images/4.png" alt=""></span>
+                <em>重庆</em>
+            </li>
+            <li>
+                <span><img src="images/5.png" alt=""></span>
+                <em>河南</em>
+            </li>
+            <li>
+                <span><img src="images/6.png" alt=""></span>
+                <em>上海</em>
+            </li>
+            <li>
+                <span><img src="images/7.png" alt=""></span>
+                <em>福州</em>
+            </li>
+            <li>
+                <span><img src="images/8.png" alt=""></span>
+                <em>青海</em>
+            </li>
+            <li>
+                <span><img src="images/9.png" alt=""></span>
+                <em>江西</em>
+            </li>
+            <li>
+                <span><img src="images/10.png" alt=""></span>
+                <em>北京</em>
+            </li>
+            <li>
+                <span><img src="images/11.png" alt=""></span>
+                <em>四川</em>
+            </li>
+            <li>
+                <span><img src="images/12.png" alt=""></span>
+                <em>广东</em>
+            </li>
+            <li>
+                <span><img src="images/13.png" alt=""></span>
+                <em>海南</em>
+            </li>
+            <li>
+                <span><img src="images/14.png" alt=""></span>
+                <em>新疆</em>
+            </li>
+            <li>
+                <span><img src="images/15.png" alt=""></span>
+                <em>澳门</em>
+            </li>
+            <li>
+                <span><img src="images/16.png" alt=""></span>
+                <em>江苏</em>
+            </li>
+            <li>
+                <span><img src="images/17.png" alt=""></span>
+                <em>西藏</em>
+            </li>
+            <li>
+                <span><img src="images/18.png" alt=""></span>
+                <em>山东</em>
+            </li>
+            <li>
+                <span><img src="images/19.png" alt=""></span>
+                <em>台湾</em>
+            </li>
+            <li>
+                <span><img src="images/20.png" alt=""></span>
+                <em>贵州</em>
+            </li>
+            <li>
+                <span><img src="images/21.png" alt=""></span>
+                <em>河北</em>
+            </li>
+            <li>
+                <span><img src="images/22.png" alt=""></span>
+                <em>湖南</em>
+            </li>
+            <li>
+                <span><img src="images/23.png" alt=""></span>
+                <em>香港</em>
+            </li>
+            <li>
+                <span><img src="images/24.png" alt=""></span>
+                <em>天津</em>
+            </li>
+            <li>
+                <span><img src="images/25.png" alt=""></span>
+                <em>辽宁</em>
+            </li>
+            <li>
+                <span><img src="images/26.png" alt=""></span>
+                <em>浙江</em>
+            </li>
+            <li>
+                <span><img src="images/27.png" alt=""></span>
+                <em>吉林</em>
+            </li>
+            <li>
+                <span><img src="images/28.png" alt=""></span>
+                <em>广西</em>
+            </li>
+            <li>
+                <span><img src="images/29.png" alt=""></span>
+                <em>云南</em>
+            </li>
+            <li>
+                <span><img src="images/30.png" alt=""></span>
+                <em>内蒙古</em>
+            </li>
+            <li>
+                <span><img src="images/31.png" alt=""></span>
+                <em>黑龙江</em>
+            </li>
+            <li>
+                <span><img src="images/32.png" alt=""></span>
+                <em>宁夏</em>
+            </li>
+            <li>
+                <span><img src="images/33.png" alt=""></span>
+                <em>甘肃</em>
+            </li>
+            <li>
+                <span><img src="images/34.png" alt=""></span>
+                <em>湖北</em>
+            </li>
+        </ul>
+         </div>
+         <span class="arrows right">
+            <img src="images/right.png" alt="">
+        </span>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,16 @@
+#header img{
+    width: 18%;
+    position: absolute;
+    top:2%;
+    left: 2%;
+    z-index: 99999999;
+}
+#content{
+    position: relative;
+}
+
+html{
+    overflow: hidden
+}
+
+

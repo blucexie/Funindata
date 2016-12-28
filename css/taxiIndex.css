@@ -1,0 +1,161 @@
+
+/*canvas{
+    position: absolute;
+    z-index: 9998;
+}*/
+
+#img1{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -9999;
+}
+
+#header .about{
+    position: absolute;
+    color: #fff;
+    right: 44px;
+    top: 20px;
+    font-size: 18px;
+    font-family:"黑体" ;
+    z-index: 999;
+}
+#header .about:hover{
+    text-shadow: 0 0 20px blue;
+}
+.nav .nav-bt{
+    position: absolute;
+    left:45px;
+    top: 110px;
+}
+.nav .nav-bt img{
+    margin-left: 40px;
+}
+.nav .nav-bt span{
+    display: block;
+    width: 274px;
+    height: 19px;
+    background: url("../images/line-lg.png") no-repeat;
+}
+.nav{
+    position: absolute;
+    left:80px;
+    top: 20px;
+
+}
+.nav ul{
+    position: absolute;
+    left: 90px;
+    top: 200px;
+
+}
+.nav ul li{
+    text-align: center;
+    height: 82px;
+    font-size: 24px;
+    font-family: "微软雅黑";
+}
+.nav ul li a{
+    color: #fff;
+}
+.nav ul li a:hover{
+    /*color: #0e5bcf;*/
+    cursor: pointer;
+    text-shadow: 0 0 20px blue;
+}
+.nav ul li span{
+    display: block;
+    width: 176px;
+    height: 20px;
+    background: url("../images/line.png") no-repeat;
+}
+/*地图========*/
+.map{
+    position: absolute;
+    width: 60%;
+    left: 25%;
+    top: 10%;
+}
+/*.map .china{
+    width: 100%;
+    margin-left: 200px;
+}*/
+.map .car{
+    position: absolute;
+    right: 2%;
+    top: 35%;
+    animation-name: rotate;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+@keyframes rotate {
+    0%   {width: 1%;}
+    25%  {width: 3%;}
+    50%  {width: 5%;}
+    75%  {width: 7%;}
+    100% {width: 9%;}
+}
+/*时间==============*/
+.time{
+    position: absolute;
+    left: 5%;
+    bottom: -24%;
+}
+.time span{
+    display: inline-block;
+    width: 95px;
+    height: 125px;
+    line-height: 125px;
+    text-align: center;
+    background: url("../images/time.png")no-repeat;
+    font-size: 58px;
+    font-family:"Arial Narrow" ;
+    color: #101420;
+
+}
+#hours{
+    margin-left: 20px;
+    background: url("../images/time1.png")no-repeat;
+}
+.time .fly{
+    -webkit-transform: rotateX(48deg) rotateY(2deg);
+    transform: rotateX(48deg) rotateY(2deg);
+    position: relative;
+    top: -100px;
+    width: 350px;
+    height: 350px;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    z-index: -9999;
+
+}
+
+
+
+
+
+@media only screen and (max-width: 1400px) {
+    .navImg{width: 80%}
+    .nav .nav-bt img{
+        width: 60%;
+        margin-left: 20px;
+    }
+    .nav .nav-bt span{
+        background-size: 80%;
+    }
+    .nav ul{left: 65px;}
+    .nav ul li{
+        height: 60px;
+        font-size: 18px;
+    }
+
+    .nav ul li span{
+        background-size: 90%;
+    }
+    .time{display: none;}
+    #main{
+        width: 800px !important;
+        height: 600px !important;
+    }
+}
