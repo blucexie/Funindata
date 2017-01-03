@@ -56,13 +56,12 @@ $(function () {
     }
 
     var Star = function() {
-
         this.orbitRadius = random(maxOrbit(w,h));
         this.radius = random(60, this.orbitRadius) / 12;
         this.orbitX = w / 2;
         this.orbitY = h / 2;
         this.timePassed = random(0, maxStars);
-        this.speed = random(this.orbitRadius) / 50000;
+        this.speed = random(this.orbitRadius) / 300000;
         this.alpha = random(2, 10) / 10;
 
         count++;
@@ -83,7 +82,7 @@ $(function () {
         ctx.globalAlpha = this.alpha;
         ctx.drawImage(canvas2, x - this.radius / 2, y - this.radius / 2, this.radius, this.radius);
         this.timePassed += this.speed;
-    }
+    };
 
     for (var i = 0; i < maxStars; i++) {
         new Star();
@@ -93,12 +92,12 @@ $(function () {
         ctx.globalCompositeOperation = 'source-over';
         ctx.globalAlpha = 0.8;
         ctx.fillStyle = 'hsla(' + hue + ', 64%, 6%, 1)';
-        ctx.fillRect(0, 0, w, h)
+        ctx.fillRect(0, 0, w, h);
 
         ctx.globalCompositeOperation = 'lighter';
         for (var i = 1, l = stars.length; i < l; i++) {
             stars[i].draw();
-        };
+        }
 
         window.requestAnimationFrame(animation);
     }

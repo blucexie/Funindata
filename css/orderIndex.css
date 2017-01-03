@@ -44,7 +44,7 @@
 }
 .nav ul li{
     text-align: center;
-    height: 82px;
+    height: 70px;
     font-size: 24px;
     font-family: "微软雅黑";
 }
@@ -64,7 +64,7 @@
 }
 .province{
     position: absolute;
-    right: 150px;
+    right: 180px;
     bottom: 70px;
     width:1114px;
     height: 200px;
@@ -127,7 +127,7 @@
     }
     .nav ul{left: 65px;}
     .nav ul li{
-        height: 60px;
+        height: 50px;
         font-size: 18px;
     }
     .nav ul li span{
@@ -151,4 +151,11 @@
         width: 800px !important ;
         height: 600px !important;
     }
+}
+@media screen and (min-width: 1930px){
+    .province{
+        right: 300px;
+    }
+    #main{margin-left: 500px !important;}
+
 }

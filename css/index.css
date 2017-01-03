@@ -8,7 +8,9 @@
 /*粒子===========*/
 canvas{
     position: absolute;
-    z-index: 9998;
+    top: 0;
+    left: 0;
+    z-index: -1;
 }
 /*数据=====================*/
 h1{
@@ -78,7 +80,7 @@ h1{
 .rocket:hover{
     cursor: pointer;
 }
-.companyProfile1{
+/*.companyProfile1{
     position: absolute;
     left: 4%;
     top: 20%;
@@ -98,7 +100,7 @@ h1{
     top: 50%;
     z-index: 1000000;
 
-}
+}*/
 .hide{
     display:none;
 }
@@ -152,6 +154,7 @@ h1{
 .login_form {padding-top: 0; font-size: 16px;}
 .login_box .form-control.x319 {
     width: 319px;
+    height: 35px;
     line-height: 35px;
     border-radius: 5px;
     border: 1px solid #0f62ac;
@@ -196,6 +199,7 @@ h1{
 }
 .login_box .form-control.x164 {
     width: 176px;
+    height: 35px;
     line-height: 35px;
     border-radius: 5px;
     border: 1px solid #0f62ac;
@@ -425,7 +429,7 @@ h1{
 }
 .pan {
     -webkit-animation: cir_p 2s linear 0s infinite;
-    animation: cir_p 2s linear 0s infinite
+    animation: cir_p 2s linear 0s infinite;
 }
 .pan1{
     position: absolute;
@@ -450,7 +454,6 @@ h1{
     animation: cir_p 8s linear 0s infinite
 }
 
-
 @keyframes cir_p {
     0% {
         transform: rotateZ(0deg)
@@ -471,7 +474,7 @@ h1{
     }
 }
 /*流星===================*/
-#content .star{position: absolute;z-index:1 }
+ .star{position: absolute;z-index:1 }
 .star {
     display:block;
     width:4px;
@@ -486,7 +489,7 @@ h1{
     animation-direction: normal;
     opacity:0;
 }
-.star:after {
+#content .star:after {
     content:'';
     position:absolute;
     top:0px;
@@ -595,7 +598,17 @@ h1{
     animation-delay:6.2s;
 
 }
+@keyframes shooting-ani {
+    0% {
 
+    }
+    50% {
+        transform:scale(1) rotate(-45deg) translate(0px, 0px);
+    }
+    100% {
+        transform:scale(0.5) rotate(-45deg) translate(0px, -1px);
+    }
+}
 @-webkit-keyframes shooting-ani {
     0% {
 
@@ -607,7 +620,20 @@ h1{
         transform:scale(0.5) rotate(-45deg) translate(0px, -1px);
     }
 }
-
+@keyframes star-ani {
+    0% {
+        opacity:0;
+        transform:scale(0) rotate(0deg) translate3d(0, 0, 0);
+    }
+    50% {
+        opacity:1;
+        transform:scale(1) rotate(0deg) translate3d(-200px, 200px, 0);
+    }
+    100% {
+        opacity:0;
+        transform:scale(1) rotate(0deg) translate3d(-500px, 500px, 0);
+    }
+}
 @-webkit-keyframes star-ani {
     0% {
         opacity:0;
@@ -622,6 +648,7 @@ h1{
         transform:scale(1) rotate(0deg) translate3d(-500px, 500px, 0);
     }
 }
+
 
 @media only screen and (max-width: 1400px) {
     h1{font-size: 38px;

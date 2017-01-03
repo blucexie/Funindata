@@ -24,15 +24,8 @@ $(function () {
     }, function () {
         $(this).siblings().removeClass('active')
     });
-  /*  $('.rocket').click(function () {
-        $('.companyProfile').show();
-        $('.rocket').hide();
-    });
-    $('.close').click(function () {
-        $('.companyProfile').hide();
-        $('.rocket').show();
-    });*/
-   function fn(){
+
+/*   function fn(){
        $('.companyProfile1').fadeOut(3000, function () {
            $('.companyProfile2').fadeIn(3000, function () {
                $('.companyProfile2').fadeOut(3000, function () {
@@ -47,7 +40,7 @@ $(function () {
            })
        });
    }
-    fn();
+    fn();*/
 
     resize();
     window.onresize = resize;

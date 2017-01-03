@@ -1,3 +1,4 @@
+/*
 #img1{
     width: 100%;
     height: 100%;
@@ -57,7 +58,7 @@
     color: #fff;
 }
 .nav ul li a:hover{
-    /*color: #0e5bcf;*/
+    !*color: #0e5bcf;*!
     cursor: pointer;
     text-shadow: 0 0 20px blue;
 }
@@ -99,6 +100,13 @@
         width: 600px !important;
         height: 600px !important;
         margin-left: 30% !important;
-        padding-top: 2% !important;
+        padding-top: 1% !important;
+
     }
 }
+@media screen and (min-width: 1930px){
+    #radar{
+       margin-left: 26% !important;
+        padding-top: 2% !important;
+    }
+}*/

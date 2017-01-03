@@ -1,18 +1,19 @@
-/**
+/*
+/!**
  * Created by funinbook on 2016/12/27.
- */
+ *!/
 $(function () {
 // 地图
     var myChart2 = echarts.init(document.getElementById('china'));
     var data = [
-        /*  {name: '上海', value: 25},
-         {name: '广州', value: 38},*/
+        /!*  {name: '上海', value: 25},
+         {name: '广州', value: 38},*!/
         {name: '北京', value: 79}
     ];
     var geoCoordMap = {
 
-        /* '上海':[121.48,31.22],
-         '广州':[113.23,23.16],*/
+        /!* '上海':[121.48,31.22],
+         '广州':[113.23,23.16],*!/
         '北京':[116.46,39.92]
     };
 
@@ -33,7 +34,7 @@ $(function () {
     option = {
 
         title: {
-            /* text: '打车指数',*/
+            /!* text: '打车指数',*!/
             left: 'center',
             textStyle: {
                 color: '#fff'
@@ -119,7 +120,7 @@ $(function () {
     myChart2.setOption(option);
 
 
-  /*  雷达图*/
+  /!*  雷达图*!/
     var v1dom = document.getElementById("radar");
     var v1 = echarts.init(v1dom);
     dataBJ = [
@@ -144,11 +145,11 @@ $(function () {
         [100,190,111,67,160]
     ];
     indicatorData = [
-        {name: '英雄联盟', max: 300},
-        {name: '梦幻西游', max: 300},
-        {name: '阴阳师', max: 300},
-        {name: '部落冲突', max: 300},
-        {name: '剑侠奇缘', max: 300}
+        {name: '游戏1', max: 300},
+        {name: '游戏2', max: 300},
+        {name: '游戏3', max: 300},
+        {name: '游戏4', max: 300},
+        {name: '游戏5', max: 300}
 
     ];
     var lineStyle = {
@@ -500,4 +501,4 @@ $(function () {
         oImg.style.height=aHeight+'px';
         oImg.style.width=aWidth+'px';
     }
-});
+});*/

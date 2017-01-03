@@ -320,7 +320,7 @@ $(function () {
                 data: convertData(data.sort(function (a, b) {
                     return b.value - a.value;
                 }).slice(0, 1)),
-                symbolSize:[20,20],
+                symbolSize:[0,0],
                 showEffectOn: 'render',
                 rippleEffect: {
                     brushType: 'stroke'
