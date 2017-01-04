@@ -55,7 +55,7 @@
 .nav ul li a:hover{
     /*color: #0e5bcf;*/
     cursor: pointer;
-    text-shadow: 0 0 20px blue;
+    text-shadow: 0 0 30px #fff;
 }
 .nav ul li span{
     display: block;

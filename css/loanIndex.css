@@ -55,7 +55,6 @@ margin-left: 20%;
     position: absolute;
     left: 90px;
     top: 200px;
-
 }
 .nav ul li{
     text-align: center;
@@ -69,8 +68,9 @@ margin-left: 20%;
 .nav ul li a:hover{
     /*color: #0e5bcf;*/
     cursor: pointer;
-    text-shadow: 0 0 20px blue;
+    text-shadow: 0 0 30px #fff;
 }
+
 .nav ul li span{
     display: block;
     width: 176px;

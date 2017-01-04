@@ -13,4 +13,6 @@ html{
     overflow: hidden
 }
 
-
+.active{
+    text-shadow: 0 0 30px #fff;
+}

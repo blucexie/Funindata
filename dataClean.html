@@ -8,9 +8,10 @@
     <link rel="stylesheet" href="css/dataClean.css">
     <link rel="shortcut icon" href="images/ico/icoe.ico" type="image/x-icon"/>
     <script type="text/javascript" src="js/jquery.1.11.3.min.js"></script>
-
     <script type="text/javascript" src="js/canvas-particle.js"></script>
-    <script type="text/javascript" src="js/index.js"></script>
+    <script type="text/javascript" src="js/public.js"></script>
+    <script type="text/javascript" src="js/dataClean.js"></script>
+    <script type="text/javascript" src="js/jquery.soChange-min.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
@@ -20,10 +21,10 @@
         <a href="index.html"><img src="images/logo.png"></a>
         <a class="about" href="About.html">关于我们</a>
     </div>
-    <h1>不良信息查询次数</h1>
+   <!-- <h1>不良信息查询次数</h1>
     <div class="data">
         <ul>
-            <li class="cLi active">1</li>
+            <li class="cLi active1">1</li>
             <li>2</li>
             <li>6</li>
             <li class="cLi">8</li>
@@ -34,7 +35,7 @@
             <li>8</li>
             <li>9</li>
         </ul>
-    </div>
+    </div>-->
     <div class="nav">
         <img class="navImg" src="images/nav.png" alt="">
         <div class="nav-bt">
@@ -43,7 +44,7 @@
         </div>
         <ul>
             <li>
-                <a href="dataClean.html">数据清洗</a>
+                <a class="active" href="dataClean.html">数据清洗</a>
                 <span></span>
             </li>
             <li>
@@ -73,9 +74,9 @@
 
         </ul>
     </div>
-    <img id="img1" src="images/index-bg.png">
+    <img id="img1" src="images/dataClean-bg.png">
 
-    <div class="ui_base u_p3d">
+    <!--<div class="ui_base u_p3d">
         <div id="earth"></div>
 
         <div class="base u_p3d">
@@ -87,7 +88,20 @@
         <div class="base2 u_p3d">
             <div class="pan2"></div>
         </div>
+    </div>-->
+    <div class="eachBox">
+        <div class="changeBox_a1" id="change_3">
+            <a href="#1" class="a_bigImg"><img src="images/clean1.png" width="871" height="442" alt="" /></a>
+            <a href="#2" class="a_bigImg"><img src="images/clean2.png" width="871" height="442" alt="" /></a>
+            <a href="#3" class="a_bigImg"><img src="images/clean3.png" width="871" height="442" alt="" /></a>
+            <ul class="ul_change_a2">
+                <li><span></span></li>
+                <li><span></span></li>
+                <li><span></span></li>
+            </ul>
+        </div>
     </div>
+
     <span class="star"></span>
     <span class="star pink"></span>
     <span class="star blue"></span>

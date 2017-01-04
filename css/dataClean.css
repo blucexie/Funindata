@@ -24,8 +24,67 @@ canvas{
     left: 0;
     z-index: -1;
 }
+/*轮播图*/
+.eachBox{
+    overflow:hidden;
+    clear:both;
+    padding:15px 0;
+    margin-left: 600px;
+    padding-top: 200px;
+}
+.changeBox_a1{
+    float:left;
+    width:871px;height:492px;
+    padding:2px;
+    position:relative;
+   /* border:1px solid #aaa;*/ }
+
+.changeBox_a1 .a_bigImg{
+    position:absolute;
+    top:2px;left:2px;
+    display:none;
+}
+.ul_change_a2{
+    position:absolute;
+    left:50%;
+    margin-left: -75px;
+    bottom:-17px;
+    padding-left:19px;
+    overflow:hidden;
+}
+.ul_change_a2 li{
+    display: -moz-inline-stack;
+    display:inline-block;
+    *display:inline;
+    *zoom:1;}
+
+.ul_change_a2 span{
+    display: inline-block;
+    width: 34px;
+    height: 34px;
+    /*display: -moz-inline-stack;
+    display:inline-block;
+    *display:inline;
+    *zoom:1;
+    font-size:0.8em;
+    padding:0px 3px;
+    margin-right:2px;
+    border:1px solid #999;
+    background:#fff;
+    filter:alpha(opacity=85);
+    opacity:0.85;*/
+    background: url("../images/round.png");
+    cursor:hand;
+    cursor:pointer;
+}
+
+.ul_change_a2 span.on{
+    background: url("../images/round1.png");
+    /*border:1px solid #CC0000;
+    background:#FFFF9D;
+    color:#CC0000;*/}
 /*数据=====================*/
-h1{
+/*h1{
     font-size:48px;
     color: #fff;
     font-family: "微软雅黑";
@@ -77,9 +136,9 @@ no-repeat;
     left:732px;
     bottom: -15px;
 }
-.active{
+.active1{
     box-shadow: 0 0 30px #47a4ff;
-}
+}*/
 /*导航====================*/
 .nav .nav-bt{
     position: absolute;
@@ -116,7 +175,7 @@ no-repeat;
     color: #fff;
 }
 .nav ul li a:hover{
-    text-shadow: 0 0 20px blue;
+    text-shadow: 0 0 30px #fff;
     cursor: pointer;
 }
 .nav ul li span{
@@ -126,7 +185,7 @@ no-repeat;
 background: url("../images/line.png") no-repeat;
 }
 /*地球====================*/
-#earth {
+/*#earth {
     position: absolute;
     left: 16%;
     bottom: 29%;
@@ -259,7 +318,7 @@ background: url("../images/line.png") no-repeat;
     100% {
         -webkit-transform: rotateZ(-360deg)
     }
-}
+}*/
 /*流星===================*/
 #content .star{position: absolute;z-index:1 }
 .star {

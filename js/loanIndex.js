@@ -2,6 +2,8 @@
  * Created by funinbook on 2016/12/20.
  */
 $(function () {
+
+
     // 地图
     var myChart = echarts.init(document.getElementById('china'));
     var data = [
