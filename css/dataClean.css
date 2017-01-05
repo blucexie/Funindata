@@ -11,7 +11,7 @@
     right: 44px;
     top: 20px;
     font-size: 18px;
-    font-family:黑体 ;
+    font-family:黑体;
     z-index: 999;
 }
 #header .about:hover{
@@ -514,6 +514,7 @@ background: url("../images/line.png") no-repeat;
         color: #fff;
         font-family: Arial;
         text-align: center;
+
     }
     .navImg{width: 80%}
     .nav .nav-bt img{
@@ -535,5 +536,40 @@ background: url("../images/line.png") no-repeat;
     .ui_base{
         padding-top: 25%;
         right: 14%;
+    }
+    .eachBox{
+        margin-left:380px;
+        padding-top: 100px;
+    }
+}
+@media screen and (min-width: 1930px){
+    .eachBox{
+        margin-left: 700px;
+    }
+}
+@media screen and (max-width: 1400px) {
+    .nav {
+        left: 40px;
+        top: 50px;
+    }
+    .navImg {
+        width: 80%
+    }
+    .nav .nav-bt img {
+        width: 60%;
+        margin-left: 20px;
+    }
+    .nav .nav-bt span {
+        background-size: 80%;
+    }
+    .nav ul {
+        left: 65px;
+    }
+    .nav ul li {
+        height: 50px;
+        font-size: 18px;
+    }
+    .nav ul li span {
+        background-size: 90%;
     }
 }

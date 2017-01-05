@@ -1,26 +1,21 @@
 /**
- * Created by funinbook on 2017/1/4.
+ * Created by funinbook on 2017/1/5.
  */
 $(function () {
-    $('#change_3 .a_bigImg').soChange({
-        thumbObj:'#change_3 .ul_change_a2 span',
-        thumbNowClass:'on',//自定义导航对象当前class为on
-        changeTime:3000//自定义切换时间为3000ms
-
-    });
-    var config = {
+   /* var config = {
         vx: 20,
         vy:  20,
         height: 7,
         width: 7,
-        count: 30,
+        count: 40,
         color: "52, 98, 196",
         stroke: "52, 98, 196",
         dist: 50000,
         e_dist: 50000,
         max_conn: 10
     };
-    CanvasParticle(config);
+    CanvasParticle(config);*/
+
     //监控浏览器
     resize();
     window.onresize = resize;
