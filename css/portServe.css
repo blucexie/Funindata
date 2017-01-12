@@ -391,3 +391,8 @@ top: 0;
         margin-left: 700px;
     }
 }
+@media screen and (max-width: 1800px){
+    .serve .list{
+      margin-right: 5%!important;
+    }
+}
